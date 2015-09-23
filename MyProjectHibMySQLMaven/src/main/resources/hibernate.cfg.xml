@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/travelTest2</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hbm2ddl.auto">update</property>
+		
+		<mapping class="lv.lgs.hibernate.domain.Blog"/>
+		<mapping class="lv.lgs.hibernate.domain.City"/>
+		<mapping class="lv.lgs.hibernate.domain.Client"/>
+		<mapping class="lv.lgs.hibernate.domain.Comment"/>
+		<mapping class="lv.lgs.hibernate.domain.CommentOfClient"/>
+		<mapping class="lv.lgs.hibernate.domain.CommentToBlog"/>
+		<mapping class="lv.lgs.hibernate.domain.Excursion"/>
+		<mapping class="lv.lgs.hibernate.domain.Language"/>
+		<mapping class="lv.lgs.hibernate.domain.Ordering"/>
+		<mapping class="lv.lgs.hibernate.domain.Question"/>
+		<mapping class="lv.lgs.hibernate.domain.Type"/>
+		
+	</session-factory>
+</hibernate-configuration>
+        
