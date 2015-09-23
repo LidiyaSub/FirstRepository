@@ -96,5 +96,5 @@ public class Blog {
 				+ authorName + ", date=" + date + ", text=" + text
 				+ ", commentsToBlog=" + commentsToBlog + "]";
 	}
-
+//some change
 }
